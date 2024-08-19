@@ -1,0 +1,13 @@
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor sodales lectus ac sodales.
+Vivamus porttitor urna felis, et lacinia massa ultrices sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+Phasellus non ligula magna. Etiam maximus at mi feugiat congue. Aenean dictum scelerisque eros, vel tempus odio iaculis in. Donec euismod ac tortor non tristique.
+Curabitur dui mauris, iaculis vitae faucibus at, pulvinar eget libero. Praesent sed nisi aliquet, dignissim nulla et, tristique turpis.
+Mauris egestas quam quis risus hendrerit, ut elementum velit mollis.
+
+******* Reverse Each Line *******
+
+sodales. ac lectus sodales auctor Sed elit. adipiscing consectetur amet, sit dolor ipsum Lorem 
+curae; cubilia posuere ultrices et luctus orci faucibus in primis ipsum ante Vestibulum sed. ultrices massa lacinia et felis, urna porttitor Vivamus 
+tristique. non tortor ac euismod Donec in. iaculis odio tempus vel eros, scelerisque dictum Aenean congue. feugiat mi at maximus Etiam magna. ligula non Phasellus 
+turpis. tristique et, nulla dignissim aliquet, nisi sed Praesent libero. eget pulvinar at, faucibus vitae iaculis mauris, dui Curabitur 
+mollis. velit elementum ut hendrerit, risus quis quam egestas Mauris 
