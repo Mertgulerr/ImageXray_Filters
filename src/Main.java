@@ -1,7 +1,11 @@
 import GUI.*;
 import Generic.GnArrayList;
+import Generic.GnLinkedList;
+import Generic.GnListExample;
+import Generic.TwoDArrayExample;
 
 import java.io.*;
+import java.lang.reflect.Method;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -12,9 +16,8 @@ import static java.util.stream.Collectors.toCollection;
 public class Main
 {
     @SuppressWarnings({"unchecked"})
-    public static void main(String[] args) throws IOException
-    {
-
+    public static void main(String[] args) {
+        //region ArrayList
         GnArrayList<Integer> integerGnArrayList = new GnArrayList<>();
         GnArrayList<String> stringsToSearch = new GnArrayList<>();
         List<String> stringsToSearchClone = new ArrayList<String>();
@@ -80,5 +83,30 @@ public class Main
         System.out.println(integerGnArrayList.GnArrayListToList());
 
         //endregion
+
+        //region LinkedList
+        GnLinkedList<String> stringGnLinkedList = new GnLinkedList<>();
+        stringGnLinkedList.AddItem(list);
+        GnLinkedList<String> reverseGnLinkedList = stringGnLinkedList.ReverseList();
+
+
+        LinkedList<Integer> L1 = new LinkedList<>(IntStream.range(1,20).boxed().collect(Collectors.toList()));
+        LinkedList<Integer> L2 =new LinkedList<>(IntStream.range(7,20).boxed().collect(Collectors.toList()));
+
+        GnLinkedList.FindInterSectionOfTwoLinkedList(L1,L2);
+
+        LinkedList<String> linklist = LongStream.range(0, 16)
+                .boxed()
+                .map(Long::toHexString)
+                .collect(toCollection(LinkedList::new));
+        linklist.add(4,"a");
+        linklist.add(7,"c");
+        linklist.add(11,"f");
+        linklist.add(1,"9");
+
+        GnLinkedList.RemoveDuplicateNodes(linklist);
+
+        //endregion
+
     }
 }
