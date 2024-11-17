@@ -106,6 +106,8 @@ public class Main
 
         GnLinkedList.RemoveDuplicateNodes(linklist);
 
+        GnLinkedList.fromArrayToList(new String[]{"1","2","3","4","5"},Integer::parseInt);
+
         //endregion
 
     }

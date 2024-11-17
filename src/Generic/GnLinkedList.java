@@ -4,12 +4,11 @@ import com.sun.source.tree.WhileLoopTree;
 
 import javax.swing.text.StyledEditorKit;
 import java.lang.reflect.Method;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.ListIterator;
+import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
-public class GnLinkedList<T>
+public class GnLinkedList<T> implements Comparable<T>
 {
     //Challenge Question: Reverse a LinkedList in Place
     private LinkedList<T> LinkTLinkedList = null;
@@ -156,4 +155,27 @@ public class GnLinkedList<T>
         System.out.println(L1);
     }
 
+    @Override
+    public int compareTo(T o) {
+        if (LinkTLinkedList != null && !LinkTLinkedList.isEmpty() && LinkTLinkedList.getFirst() instanceof String)
+        {
+            for (T item: LinkTLinkedList)
+            {
+                return Integer.compare(item.toString().length(),o.toString().length());
+            }
+        }
+        return 0;
+    }
+
+    public static <T> List<T> fromArrayToList(T[] a)
+    {
+        return Arrays.stream(a).collect(Collectors.toList());
+    }
+
+    public static <T, G> List<G> fromArrayToList(T[] a, Function<T, G> mapperFunction)
+    {
+        return Arrays.stream(a)
+                .map(mapperFunction)
+                .collect(Collectors.toList());
+    }
 }
